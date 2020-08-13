@@ -1,0 +1,6 @@
+<h2>Create a Dose for <%= @cocktail.name %></h2>
+
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.submit %>
+<% end %>
