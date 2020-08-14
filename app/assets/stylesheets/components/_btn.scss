@@ -1,0 +1,17 @@
+$coral: #FF6B6B;
+$med_turq: #4ECDC4;
+$yellow: #FFE66D;
+
+.btn {
+  background-color: $med_turq;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 16px;
+  &:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: $yellow;
+  }
+}

@@ -1,0 +1,19 @@
+$yellow: #FFE66D;
+$coral: #FF6B6B;
+
+.container {
+  width: 1000px;
+  margin: auto;
+  .card {
+    height: 240px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $coral;
+    box-shadow: 2px 2px 2px lightgray;
+    .link {
+      color: white;
+    }
+  }
+}

@@ -1,9 +1,13 @@
-<h2>Cocktails</h2>
+<div class="container banner d-flex justify-content-between align-items-center pt-4 mb-3">
+  <h2>Cocktails</h2>
+  <span class="btn"><%= link_to 'Add a new cocktail', new_cocktail_path %></span>
+</div>
 
-<ul>
+<div class="container d-flex flex-wrap justify-content-around">
   <% @cocktails.each do |cocktail| %>
-    <li><%= link_to "#{cocktail.name}", cocktail %></li>
+    <div class="card mb-4">
+      <p class="link"><%= link_to "#{cocktail.name}", cocktail %></p>
+    </div>
   <% end %>
-</ul>
+</div>
 
-<p><%= link_to 'Add a new cocktail', new_cocktail_path %></p>
