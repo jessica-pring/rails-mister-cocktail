@@ -6,7 +6,7 @@
 <div class="container d-flex flex-wrap justify-content-around">
   <% @cocktails.each do |cocktail| %>
     <div class="card mb-4">
-      <p class="link"><%= link_to "#{cocktail.name}", cocktail %></p>
+      <%= link_to "#{cocktail.name}", cocktail %>
     </div>
   <% end %>
 </div>

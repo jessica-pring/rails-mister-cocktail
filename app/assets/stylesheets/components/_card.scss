@@ -12,8 +12,14 @@ $coral: #FF6B6B;
     justify-content: center;
     background-color: $coral;
     box-shadow: 2px 2px 2px lightgray;
-    .link {
+    a {
       color: white;
+      text-decoration: none;
+      transition: 0.3s ease;
+      &:hover {
+        font-weight: bold;
+        font-size: 1.5em;
+      }
     }
   }
 }
