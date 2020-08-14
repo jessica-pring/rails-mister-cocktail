@@ -24,9 +24,9 @@ ingredients.each do |hash|
   end
 end
 
-mart_file = URI.open('https://images.unsplash.com/photo-1575023782549-62ca0d244b39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')
-marg_file = URI.open('https://images.unsplash.com/photo-1590701833281-e6283af0948d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')
-old_file = URI.open('https://images.unsplash.com/photo-1552299100-a3abff9291e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')
+mart_file = URI.open('https://images.unsplash.com/photo-1575023782549-62ca0d244b39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80/')
+marg_file = URI.open('https://images.unsplash.com/photo-1590701833281-e6283af0948d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80/')
+old_file = URI.open('https://images.unsplash.com/photo-1552299100-a3abff9291e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80/')
 
 martini = Cocktail.create(name: "Martini")
 martini.photo.attach(io: mart_file, filename: 'martini.png', content_type: 'image/png')
