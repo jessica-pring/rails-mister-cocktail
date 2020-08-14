@@ -11,5 +11,8 @@
   h2 {
     font-family: 'Raleway';
     font-weight: bold;
+    color: $coral;
+    border-bottom: $coral 2px solid;
+    padding-right: 40px;
   }
 }
