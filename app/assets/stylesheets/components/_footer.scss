@@ -1,0 +1,23 @@
+$dark_turq: #1A535C;
+$med_turq: #4ECDC4;
+$pale: #F7FFF7;
+$coral: #FF6B6B;
+$yellow: #FFE66D;
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: $med_turq;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    padding-top: 8px;
+    font-family: 'Raleway Dots';
+    font-size: 1em;
+    color: $pale;
+    letter-spacing: 0.3em;
+  }
+}

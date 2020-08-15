@@ -1,7 +1,17 @@
-<h2>Create a Dose for <%= @cocktail.name %></h2>
+<div class="container c-form">
+  <h2>Create a new dose for
+    <br>
+    <strong><%= @cocktail.name %></strong></h2>
 
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :description %>
-  <%= f.association :ingredient %>
-  <%= f.submit %>
-<% end %>
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <div class="form-inputs">
+      <%= f.input :description %>
+      <%= f.association :ingredient %>
+    </div>
+
+    <div class="form-actions btn">
+      <%= f.submit %>
+    </div>
+  <% end %>
+
+</div>
